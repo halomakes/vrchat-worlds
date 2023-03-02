@@ -63,3 +63,4 @@ crashlytics-build.properties
 
 # Blender backups
 *.blend[0-9]
+Precipice/Assets/_PoiyomiShaders/
