@@ -84,13 +84,13 @@ RenderSettings:
   m_FogDensity: 0.05
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.4301988, g: 0.35587126, b: 0.2815437, a: 1}
+  m_AmbientSkyColor: {r: 0.5377358, g: 0.5197853, b: 0.47939655, a: 1}
   m_AmbientEquatorColor: {r: 0.7296103, g: 0.6002468, b: 0.4760578, a: 1.1}
   m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientIntensity: 8
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 369eef9b73692db4da188ce1e97f6a06, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a4a38fd7d4638254da4c0c399de4417d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 0.136
   m_FlareFadeSpeed: 3
@@ -102,7 +102,8 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 30cff55c961f1954ab1883abfa8814e6, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000081217535, g: 0.000106579966, b: 0.00007838263,
+    a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!108 &21933
 Light:
@@ -354,7 +355,6 @@ GameObject:
   - component: {fileID: 437120018}
   - component: {fileID: 437120020}
   - component: {fileID: 437120019}
-  - component: {fileID: 437120021}
   m_Layer: 0
   m_Name: moon-pug
   m_TagString: Untagged
@@ -440,13 +440,14 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 2100000, guid: 95cfe93174b4d544590af39e70ad6a56, type: 2}
-  - {fileID: 2100000, guid: 6f791044279ac324db512cb481609080, type: 2}
-  - {fileID: 2100000, guid: 1cccf50526a34654897df9e9f32f4405, type: 2}
   - {fileID: 2100000, guid: 2bd4ff6f64ad7624a8da488c79031340, type: 2}
   - {fileID: 2100000, guid: c591bb43a65e68e46bdfaedc4e2c38a2, type: 2}
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 95cfe93174b4d544590af39e70ad6a56, type: 2}
+  - {fileID: 2100000, guid: 6f791044279ac324db512cb481609080, type: 2}
+  - {fileID: 2100000, guid: 1cccf50526a34654897df9e9f32f4405, type: 2}
   - {fileID: 2100000, guid: 1c987494452b85f4ab4cac3322415907, type: 2}
+  - {fileID: 2100000, guid: 0801238d94c9f454d8a51c330bdc083e, type: 2}
   LightMapsNear: []
   LightMapsFar: []
   LightMode: 0
@@ -568,19 +569,6 @@ MonoBehaviour:
   Placement: {fileID: 0}
   ChangeAvatarsOnUse: 0
   scale: 1
---- !u!114 &437120021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437120014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 1
 --- !u!1 &472577321
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0801238d94c9f454d8a51c330bdc083e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -836,7 +824,7 @@ MeshCollider:
   m_GameObject: {fileID: 1210009557}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
